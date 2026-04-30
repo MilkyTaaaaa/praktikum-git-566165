@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaevrin — Built for the Wild</title>
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+
+
+  <!-- ================================
+       NAVBAR
+  ================================ -->
+  <header class="navbar" id="navbar">
+    <div class="navbar-inner">
+
+      <a href="#" class="logo">
+        <svg width="36" height="28" viewBox="0 0 36 28" fill="none">
+          <path d="M2 26L12 4L18 16L24 4L34 26" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>KAEVRIN</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#innovations" class="nav-link">Products</a>
+        <a href="#" class="nav-link">Contact</a>
+        <a href="#" class="nav-link">About</a>
+        <a href="#" class="nav-link nav-login">Login</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn cart-btn" aria-label="Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+          <span class="cart-count">0</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#" class="mobile-link">Home</a>
+      <a href="#innovations" class="mobile-link">Products</a>
+      <a href="#" class="mobile-link">Contact</a>
+      <a href="#" class="mobile-link">About</a>
+      <a href="#" class="mobile-link">Login</a>
+    </div>
+  </header>
+
+  <!-- ================================
+       HERO SECTION
+  ================================ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1800&q=80" alt="Mountain landscape" class="hero-img" id="heroImg">
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow" data-reveal>Outdoor Lifestyle Brand</p>
+      <h1 class="hero-title" data-reveal>
+        <span class="title-line">REACH</span>
+        <span class="title-line italic">Beyond</span>
+        <span class="title-line">LIMITS</span>
+      </h1>
+      <p class="hero-sub" data-reveal>Premium gear engineered for modern explorers.<br>Where durability meets refined design.</p>
+      <div class="hero-cta" data-reveal>
+        <button class="btn-primary">Shop Now</button>
+        <button class="btn-ghost">Explore More</button>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+
+
+  </section>
+
+
+  <!-- ================================
+       DISCOVER OUR INNOVATIONS
+  ================================ -->
+  <section class="innovations" id="innovations">
+    <div class="section-head">
+      <p class="section-label" data-reveal>Our Collection</p>
+      <h2 class="section-title" data-reveal>Discover Our<br><em>Innovations</em></h2>
+    </div>
+
+    <div class="innovations-grid">
+
+      <article class="inno-card" data-reveal data-delay="0">
+        <div class="inno-img-wrap">
+          <img src="img/jaket.png" alt="Summit Tent">
+          <div class="inno-overlay">
+            <button class="quick-view" data-product="Summit Shelter Pro">Quick View</button>
+          </div>
+        </div>
+        <div class="inno-info">
+          <span class="inno-tag">Shelter</span>
+          <h3>Summit Shelter Pro</h3>
+          <span class="inno-price">Rp 3.200.000</span>
+        </div>
+      </article>
+
+      <article class="inno-card" data-reveal data-delay="100">
+        <div class="inno-img-wrap">
+          <img src="img/sepatu.png" alt="Alpine Trek Shoes">
+          <div class="inno-overlay">
+            <button class="quick-view" data-product="Alpine Trek X">Quick View</button>
+          </div>
+        </div>
+        <div class="inno-info">
+          <span class="inno-tag">Footwear</span>
+          <h3>Alpine Trek X</h3>
+          <span class="inno-price">Rp 2.643.000</span>
+        </div>
+      </article>
+
+      <article class="inno-card" data-reveal data-delay="200">
+        <div class="inno-img-wrap">
+          <img src="img/tas.png" alt="Ridgeline Pack">
+          <div class="inno-overlay">
+            <button class="quick-view" data-product="Ridgeline Pack 60L">Quick View</button>
+          </div>
+        </div>
+        <div class="inno-info">
+          <span class="inno-tag">Carry</span>
+          <h3>Ridgeline Pack 60L</h3>
+          <span class="inno-price">Rp 4.288.500</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ================================
+       FEATURE BANNER
+  ================================ -->
+  <section class="feature-banner">
+    <div class="feature-bg">
+      <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=1600&q=80" alt="Explorer">
+    </div>
+    <div class="feature-content" data-reveal>
+      <p class="section-label light">Our Philosophy</p>
+      <h2>Gear That<br><em>Goes Further</em></h2>
+      <p class="feature-desc">Every Kaevrin product is tested in extreme conditions — from alpine ridges to dense rainforests. We build for longevity, not trends.</p>
+      <button class="btn-primary light">Our Story</button>
+    </div>
+  </section>
+
+  <!-- ================================
+       NEW ARRIVALS
+  ================================ -->
+  <section class="arrivals" id="arrivals">
+    <div class="section-head">
+      <p class="section-label" data-reveal>Fresh Drop</p>
+      <h2 class="section-title" data-reveal>New <em>Arrivals</em></h2>
+    </div>
+
+    <div class="arrivals-grid">
+
+      <article class="arrival-card" data-reveal data-delay="0">
+        <div class="arrival-img-wrap">
+          <img src="https://images.unsplash.com/photo-1479064555552-3ef4d0d8bf8b?w=600&q=80" alt="Base Layer">
+          <span class="arrival-badge">New</span>
+          <div class="arrival-overlay">
+            <button class="add-to-cart" data-product="ArcFlow Base Layer" data-price="800000">Add to Cart</button>
+          </div>
+        </div>
+        <div class="arrival-info">
+          <h3>ArcFlow Base Layer</h3>
+          <p>Merino-tech blend for all-season performance.</p>
+          <span class="arrival-price">Rp 800.000</span>
+        </div>
+      </article>
+
+      <article class="arrival-card" data-reveal data-delay="100">
+        <div class="arrival-img-wrap">
+          <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=600&q=80" alt="Trail Tent">
+          <span class="arrival-badge">New</span>
+          <div class="arrival-overlay">
+            <button class="add-to-cart" data-product="TrailDome 2P" data-price="3200000">Add to Cart</button>
+          </div>
+        </div>
+        <div class="arrival-info">
+          <h3>TrailDome 2P Tent</h3>
+          <p>Ultralight shelter rated for 4-season use.</p>
+          <span class="arrival-price">Rp 3.200.000</span>
+        </div>
+      </article>
+
+      <article class="arrival-card" data-reveal data-delay="200">
+        <div class="arrival-img-wrap">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Summit Gloves">
+          <span class="arrival-badge">New</span>
+          <div class="arrival-overlay">
+            <button class="add-to-cart" data-product="Summit Gloves Pro" data-price="450000">Add to Cart</button>
+          </div>
+        </div>
+        <div class="arrival-info">
+          <h3>Summit Gloves Pro</h3>
+          <p>Waterproof grip for cold-weather ascents.</p>
+          <span class="arrival-price">Rp 450.000</span>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="arrivals-more" data-reveal>
+      <button class="btn-outline">See More</button>
+    </div>
+  </section>
+
+  <!-- ================================
+       TESTIMONIALS
+  ================================ -->
+  <section class="testimonials">
+    <div class="section-head">
+      <p class="section-label" data-reveal>Reviews</p>
+      <h2 class="section-title" data-reveal>What Explorers<br><em>Say</em></h2>
+    </div>
+
+    <div class="testi-track-wrap">
+      <div class="testi-track" id="testiTrack">
+
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p>"The Ridgeline Pack survived a 14-day Himalayan trek without a single failure. Exceptional build quality."</p>
+          <div class="testi-author">
+            <img src="https://i.pravatar.cc/48?img=11" alt="Reviewer">
+            <div>
+              <strong>Rizal A.</strong>
+              <span>Mountaineer, Yogyakarta</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p>"Alpine Trek X is the most comfortable trail shoe I've owned. The grip on wet rock is unreal."</p>
+          <div class="testi-author">
+            <img src="https://i.pravatar.cc/48?img=5" alt="Reviewer">
+            <div>
+              <strong>Sari W.</strong>
+              <span>Trail Runner, Bandung</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p>"Finally a brand that gets the aesthetic right without compromising on function. Kaevrin is the real deal."</p>
+          <div class="testi-author">
+            <img src="https://i.pravatar.cc/48?img=33" alt="Reviewer">
+            <div>
+              <strong>Dimas R.</strong>
+              <span>Photographer & Hiker</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="stars">★★★★☆</div>
+          <p>"The Summit Shelter Pro sets up in under 4 minutes. Waterproofing held perfectly through a full storm."</p>
+          <div class="testi-author">
+            <img src="https://i.pravatar.cc/48?img=22" alt="Reviewer">
+            <div>
+              <strong>Nadia P.</strong>
+              <span>Backpacker, Jakarta</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="testi-controls">
+        <button class="testi-btn" id="testiPrev" aria-label="Previous">&#8592;</button>
+        <div class="testi-dots" id="testiDots"></div>
+        <button class="testi-btn" id="testiNext" aria-label="Next">&#8594;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================
+       FOOTER
+  ================================ -->
+  <footer class="footer">
+    <div class="footer-top">
+
+      <div class="footer-brand">
+        <a href="#" class="logo footer-logo">
+          <svg width="30" height="24" viewBox="0 0 36 28" fill="none">
+            <path d="M2 26L12 4L18 16L24 4L34 26" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>KAEVRIN</span>
+        </a>
+        <p>Established premium outdoor lifestyle brand since 2016. Delivering high-performance gear that blends technical excellence with principled design.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Twitter">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="YouTube">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-1.96C18.88 4 12 4 12 4s-6.88 0-8.6.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.4 19.54C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 001.94-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" stroke="none" fill="currentColor"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>More Information</h4>
+        <a href="#">About Kaevrin</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Products</a>
+        <a href="#">Careers</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Customer Care</h4>
+        <a href="#">Contact Us</a>
+        <a href="#">Return Policy</a>
+        <a href="#">Shipping Info</a>
+        <a href="#">Size Guide</a>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4>Sign Up to Kaevrin Member Club</h4>
+        <p>Get early access to new drops, exclusive deals, and expedition stories.</p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Enter your email address" id="newsletterEmail">
+          <button class="btn-subscribe" id="subscribeBtn">Subscribe</button>
+        </div>
+        <p class="newsletter-note">By providing your email address, you agree to our <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a>.</p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; 2025 Kaevrin. All Rights Reserved.</span>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- QUICK VIEW MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- CART TOAST -->
+  <div class="toast" id="toast"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
