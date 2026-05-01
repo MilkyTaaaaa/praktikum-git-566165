@@ -53,6 +53,19 @@ Project ini diselesaikan melalui beberapa tahapan simulasi alur kerja *software 
 
 ---
 
+
+## Perintah Git
+
+- `git init` → membuat repository
+- `git add .` → menambahkan perubahan
+- `git commit` → menyimpan perubahan
+- `git branch` → membuat branch
+- `git checkout` → pindah branch
+- `git merge` → menggabungkan branch
+- `git rebase -i` → menggabungkan commit
+- `git push` → upload ke GitHub
+
+
 ## 💻 Dokumentasi Perintah Git yang Digunakan
 
 * `git clone [url]`: Mengunduh *repository* dari GitHub ke penyimpanan lokal.
@@ -74,4 +87,8 @@ Project ini diselesaikan melalui beberapa tahapan simulasi alur kerja *software 
 ![Git Log](img/log4.png)
 ![Git Log](img/log5.png)
 ---
+
+### Branch Protection
+![Branch Protection](img/branchprotection.png)
+
 
